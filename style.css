@@ -21,3 +21,95 @@ h1 {
     display: flex;
     flex: 1 1 0;
 }
+
+.settings {
+    display: flex;
+    justify-content: center;
+    margin-top: 4cqw;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+}
+
+.range {
+    height: 80px;
+    width: 380px;
+    padding: 0 65px 0 45px;
+}
+
+.range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.range .field .value {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(128, 128, 128);
+}
+
+.range .field .value.left {
+    left: -22px;
+}
+
+.range .field .value.right {
+    right: -43px;
+}
+
+.range .sliderValue {
+    position: relative;
+    width: 100%;
+    left: 50%;
+}
+
+.range .sliderValue span {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    height: 45px;
+    width: 45px;
+    top: -40px;
+    transform: translateX(-50%);
+    line-height: 55px;
+    z-index: 2;
+}
+
+.range .sliderValue span:after {
+    position: absolute;
+    content: "";
+    height: 45px;
+    width: 45px;
+    background-color: rgb(156, 156, 156);
+    transform: translateX(-50%) rotate(45deg);
+    left: 50%;
+    bottom: -8%;
+    z-index: -1;
+}
+
+.range .field input {
+    appearance: none; 
+    height:  3px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.range .field input::-webkit-slider-thumb {
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    background-color: rgb(156, 156, 156);
+    border: 1px solid rgb(128, 128, 128);
+    cursor: pointer;
+}
