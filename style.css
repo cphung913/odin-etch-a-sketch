@@ -13,8 +13,9 @@ h1 {
 }
 
 .tile {
-    border: 1px solid black;
+    border: 1px solid rgb(221, 221, 221);
     flex: 1 1 0;
+    z-index: 5;
 }
 
 .row {
@@ -25,13 +26,15 @@ h1 {
 .settings {
     display: flex;
     justify-content: center;
-    margin-top: 4cqw;
+    margin-top: 100px;
+    gap: 120px;
 }
 
 button {
     height: 40px;
     width: 100px;
     font-size: 18px;
+    font-weight: 500;
 }
 
 .range {
@@ -112,4 +115,8 @@ button {
     background-color: rgb(156, 156, 156);
     border: 1px solid rgb(128, 128, 128);
     cursor: pointer;
+}
+
+.selected {
+    background-color: black;
 }
